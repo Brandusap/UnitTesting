@@ -32,8 +32,8 @@ public class IsPositiveTest {
     @ValueSource(doubles = {-2.5,-6.0,-6, -Double.MAX_VALUE})
     public void checkNegativeValues(double numberFromList){
         IsPositive numberToCheck =  new IsPositive();
-        boolean result = numberToCheck.isNegative(numberFromList);
-        Assertions.assertTrue(result);
+        boolean result = numberToCheck.isPositive(numberFromList);
+        Assertions.assertTrue(!result);
     }
 
 
